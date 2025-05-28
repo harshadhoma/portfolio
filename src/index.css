@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: theme('colors.background');
+  color: theme('colors.text');
+  overflow-x: hidden;
+}
+
+.code-font {
+  font-family: 'Fira Code', monospace;
+}
+
+.nav-link {
+  @apply relative px-4 py-2 text-text transition-all duration-300 hover:text-primary;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: theme('colors.primary');
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 70%;
+}
+
+.active {
+  @apply text-primary;
+}
+
+.social-icon {
+  @apply flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ease-in-out;
+  background-color: theme('colors.blue.50');
+  color: theme('colors.primary');
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: theme('colors.primary');
+  color: white;
+}
+
+.project-card {
+  @apply relative overflow-hidden rounded-lg transition-all duration-300;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 221, 0.1);
+}
+
+.skill-tag {
+  @apply px-3 py-1 m-1 rounded-full text-sm font-medium transition-all duration-300;
+  background-color: rgba(0, 255, 221, 0.1);
+  color: var(--primary);
+}
+
+.skill-tag:hover {
+  background-color: var(--primary);
+  color: var(--darker);
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-8 relative inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: linear-gradient(90deg, theme('colors.primary'), theme('colors.secondary'));
+}
+
+.code-window {
+  background-color: #0d1117;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.code-window-dots {
+  @apply flex gap-2 p-3 border-b border-gray-800;
+}
+
+.dot {
+  @apply w-3 h-3 rounded-full;
+}
+
+.dot-red {
+  background-color: #ff5f56;
+}
+
+.dot-yellow {
+  background-color: #ffbd2e;
+}
+
+.dot-green {
+  background-color: #27c93f;
+}
+
+.code-content {
+  @apply p-6 overflow-auto code-font text-sm;
+}
+
+.code-keyword {
+  color: #ff79c6;
+}
+
+.code-var {
+  color: #8be9fd;
+}
+
+.code-string {
+  color: #f1fa8c;
+}
+
+.code-function {
+  color: #50fa7b;
+}
+
+.code-boolean {
+  color: #bd93f9;
+}
+
+.code-number {
+  color: #bd93f9;
+}
+
+.code-comment {
+  color: #6272a4;
+}
+
+.back-to-top {
+  @apply fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center rounded-full text-white z-50 transition-all duration-300;
+  background-color: theme('colors.primary');
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-10 border-l-2 border-gray-700;
+}
+
+.timeline-item::before {
+  content: '';
+  @apply absolute w-4 h-4 rounded-full bg-secondary -left-[9px] top-1;
+}
+
+.timeline-item:last-child {
+  @apply border-l-0;
+}
+
+.blog-card {
+  @apply overflow-hidden rounded-lg transition-all duration-300;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
