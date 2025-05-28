@@ -33,7 +33,7 @@ const Education: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mt-2">{edu.degree}</h3>
               <p className="text-primary">{edu.institution}</p>
-              <p className="text-gray-300 mt-2">{edu.description}</p>
+              <p className="text-black-300 mt-2">{edu.description}</p>
             </motion.div>
           ))}
         </div>

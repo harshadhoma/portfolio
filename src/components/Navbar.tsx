@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
               to={link.id}
               spy={true}
               smooth={true}
-              offset={-20}
+              offset={-50}
               duration={500}
               className="nav-link cursor-pointer"
               activeClass="active"

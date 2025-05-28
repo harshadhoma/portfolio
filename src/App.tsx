@@ -36,9 +36,9 @@ function App() {
       <Experience />
       <Skills />
       <Education />
+      <Projects />
       <Publications />
       <Certifications />
-      <Projects />
       <Contact />
       <Footer />
     </main>

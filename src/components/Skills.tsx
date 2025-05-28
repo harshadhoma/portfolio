@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-5 bg-background">
+    <section id="skills" className="py-10 bg-background">
       <div className="container mx-auto px-6">
         <motion.h2 
           className="section-title text-dark"

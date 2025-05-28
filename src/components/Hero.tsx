@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-dark">
               I'm <span className="text-secondary">Harshavardhan</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl">
+            <p className="text-lg md:text-xl text-black-700 dark:text-black-300 mb-8 max-w-xl">
               Recent Master's graduate in Computer Science from Indiana University Bloomington, with 1 year of professional experience as a Software Engineer. Passionate about building secure, scalable, and impactful technology solutions.
             </p>
             
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
               <SocialIcons />
             </div>
             
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-4 flex flex-wrap gap-4">
               <Link
                 to="contact"
                 spy={true}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
                 CONTACT ME
               </Link>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1M--V61Eclq_5ildWHjWCaeR9Jvy1ybL3/view?usp=sharing"
                 className="bg-white border-2 border-primary text-primary px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300 inline-flex items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,38 +61,36 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="code-window w-full bg-dark">
-              <div className="code-window-dots">
-                <div className="dot dot-red"></div>
-                <div className="dot dot-yellow"></div>
-                <div className="dot dot-green"></div>
-              </div>
-              <div className="code-content">
-                <pre>
-                  <code>
-                    <span className="code-keyword">const</span> <span className="code-var">developer</span> <span className="code-keyword">=</span> {'{'}
-                    <br />
-                    {'  '}<span className="code-var">name</span>: <span className="code-string">'Harshavardhan Reddy Dhoma'</span>,
-                    <br />
-                    {'  '}<span className="code-var">education</span>: <span className="code-string">'MS Computer Science, Indiana University Bloomington'</span>,
-                    <br />
-                    {'  '}<span className="code-var">experience</span>: <span className="code-string">'Software Engineer'</span>,
-                    <br />
-                    {'  '}<span className="code-var">skills</span>: [
-                    <br />
-                    {'    '}<span className="code-string">'Python'</span>, <span className="code-string">'Java'</span>, <span className="code-string">'AWS'</span>,
-                    <br />
-                    {'    '}<span className="code-string">'Docker'</span>, <span className="code-string">'LangChain'</span>, <span className="code-string">'SQL'</span>
-                    <br />
-                    {'  '}],
-                    <br />
-                    {'  '}<span className="code-var">passion</span>: <span className="code-string">'Building secure, scalable tech solutions'</span>
-                    <br />
-                    {'}'};
-                  </code>
-                </pre>
-              </div>
-            </div>
+            <div className="code-window w-full bg-dark rounded-lg overflow-x-auto max-w-full">
+  <div className="code-window-dots flex space-x-1 px-3 py-2">
+    <div className="dot dot-red bg-red-500 rounded-full w-3 h-3"></div>
+    <div className="dot dot-yellow bg-yellow-400 rounded-full w-3 h-3"></div>
+    <div className="dot dot-green bg-green-500 rounded-full w-3 h-3"></div>
+  </div>
+  <div className="code-content px-4 py-2">
+    <pre className="text-xs md:text-sm text-white whitespace-pre-wrap">
+      <code>
+        {`const developer = {
+  name: 'Harshavardhan Reddy Dhoma',
+  skills: [
+    'Python', 'Java', 'AWS', 'Docker', 'LangChain', 'SQL'
+  ],
+  hardworker: true,
+  quickLearner: true,
+  problemSolver: true,
+  hireable: function() {
+    return (
+      this.hardworker &&
+      this.problemSolver &&
+      this.skills.length >= 5
+    );
+  }
+};`}
+      </code>
+    </pre>
+  </div>
+</div>
+
           </motion.div>
         </div>
       </div>

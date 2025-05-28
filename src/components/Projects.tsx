@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <p className="text-black-300 mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap mb-4">
                   {project.tags.map((tag, i) => (

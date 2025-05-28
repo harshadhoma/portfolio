@@ -5,7 +5,7 @@ import { publications } from '../data';
 
 const Publications: React.FC = () => {
   return (
-    <section id="publications" className="py-5">
+    <section id="publications" className="py-10">
       <div className="container mx-auto px-6">
         <motion.h2 
           className="section-title text-dark"

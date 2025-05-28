@@ -5,9 +5,9 @@ export const navLinks: NavLink[] = [
   { id: 'experience', title: 'EXPERIENCE' },
   { id: 'skills', title: 'SKILLS' },
   { id: 'education', title: 'EDUCATION' },
+  { id: 'projects', title: 'PROJECTS' },
   { id: 'publications', title: 'PUBLICATIONS' },
   { id: 'certifications', title: 'CERTIFICATIONS' },
-  { id: 'projects', title: 'PROJECTS' },
 ];
 
 export const socialLinks: SocialLink[] = [
