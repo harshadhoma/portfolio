@@ -1,3 +1,4 @@
+import { Bold } from 'lucide-react';
 import { NavLink, SocialLink, SkillCategory, Experience, Education, Project, BlogPost, Contact, Publication, Certification } from '../types';
 
 export const navLinks: NavLink[] = [
@@ -78,7 +79,10 @@ export const education: Education[] = [
     degree: 'Master of Science in Computer Science',
     institution: 'Indiana University Bloomington',
     duration: '2023 – 2025',
-    description: 'Specialized in AI, Cloud Computing, and Secure Systems. Relevant coursework: Distributed Systems, Machine Learning, Cloud Security.'
+    description: [
+      'Graduate & Professional Student Government Representative for the Computer Science Department.',
+      'Relevant Coursework: Applied Algorithms, Elements of Artificial Intelligence, Systems & Protocol Security and Information Assurance, Advanced Database Concepts, Software Engineering'
+    ]
   },
   {
     degree: 'Bachelor of Technology in Computer Science & Engineering',
