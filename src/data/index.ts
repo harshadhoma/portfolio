@@ -1,262 +1,220 @@
-import { Bold } from 'lucide-react';
-import { NavLink, SocialLink, SkillCategory, Experience, Education, Project, BlogPost, Contact, Publication, Certification } from '../types';
+import {
+  NavLink,
+  SocialLink,
+  SkillCategory,
+  Experience,
+  Education,
+  Project,
+  BlogPost,
+  Contact,
+  Certification
+} from '../types';
 
+/* =======================
+   NAVIGATION
+======================= */
 export const navLinks: NavLink[] = [
   { id: 'about', title: 'ABOUT' },
   { id: 'experience', title: 'EXPERIENCE' },
   { id: 'skills', title: 'SKILLS' },
   { id: 'education', title: 'EDUCATION' },
   { id: 'projects', title: 'PROJECTS' },
-  { id: 'publications', title: 'PUBLICATIONS' },
   { id: 'certifications', title: 'CERTIFICATIONS' },
 ];
 
+/* =======================
+   SOCIAL LINKS
+======================= */
 export const socialLinks: SocialLink[] = [
-  { id: 'github', icon: 'Github', url: 'https://github.com/harshadhoma' },
-  { id: 'linkedin', icon: 'Linkedin', url: 'https://www.linkedin.com/in/harshadhoma/' },
-  { id: 'mail', icon: 'Mail', url: 'mailto:dhreddy2001@gmail.com' },
-  // { id: 'twitter', icon: 'Twitter', url: 'https://twitter.com/yourusername' },
+  { id: 'linkedin', icon: 'Linkedin', url: 'https://www.linkedin.com/in/reddyharsha07/' },
+  { id: 'mail', icon: 'Mail', url: 'mailto:dhreddy07@gmail.com' },
+  { id: 'blog', icon: 'Link', url: 'https://topicsunfolded.blog/' }
 ];
 
+/* =======================
+   SKILLS (Resume-aligned)
+======================= */
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Programming Languages',
-    skills: ['Python', 'Java', 'C', 'SQL', 'HTML5/CSS3']
+    name: 'Cloud & Data Platforms',
+    skills: [
+      'Microsoft Fabric',
+      'Azure Databricks',
+      'Azure Synapse Analytics',
+      'Azure Data Lake Storage Gen2',
+      'Azure Data Factory',
+      'Azure Event Hubs',
+      'Microsoft Purview',
+      'Unity Catalog'
+    ]
   },
   {
-    name: 'Cloud & DevOps',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD', 'Jenkins']
+    name: 'Big Data & Processing',
+    skills: [
+      'Apache Spark (PySpark)',
+      'Delta Lake',
+      'Structured Streaming',
+      'Batch Processing',
+      'Medallion Architecture',
+      'Incremental Loads',
+      'CDC'
+    ]
   },
   {
-    name: 'Databases',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'Neo4J', 'MongoDB', 'DynamoDB', 'FAISS', 'Pinecone']
+    name: 'Programming & Databases',
+    skills: [
+      'Python',
+      'SQL (T-SQL, PL/SQL)',
+      'SQL Server',
+      'Oracle',
+      'Snowflake'
+    ]
   },
   {
-    name: 'Frameworks & Libraries',
-    skills: ['Flask', 'FastAPI', 'LangChain', 'LangGraph', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Scikit-Learn']
-  },
-  {
-    name: 'Version Control & Tools',
-    skills: ['Git', 'GitHub', 'Bitbucket', 'VS Code', 'Linux']
-  },
-  {
-    name: 'Automation & Testing',
-    skills: ['Selenium', 'Postman']
-  },
-  {
-    name: 'Gen AI',
-    skills: ['AWS Bedrock', 'LangChain', 'LLMs (GPT-4, Llama 3)', 'Hugging Face Transformers', 'Embeddings', 'Conversational AI']
+    name: 'DevOps & Governance',
+    skills: [
+      'Terraform',
+      'Azure DevOps',
+      'CI/CD Pipelines',
+      'Great Expectations',
+      'RBAC',
+      'HIPAA',
+      'FDA 21 CFR Part 11'
+    ]
   }
 ];
 
+/* =======================
+   EXPERIENCE (Resume ONLY)
+======================= */
 export const experiences: Experience[] = [
   {
-    title: 'Software Engineer',
-    company: 'JunoClinic',
-    duration: 'Jul 2022 – Jul 2023',
+    title: 'Senior Data Platform Engineer',
+    company: 'Eli Lilly and Company',
+    duration: 'Sep 2024 – Present',
     description: [
-      'Engineered and deployed a secure telehealth video platform that elevated user engagement by 40% and improved remote therapy accessibility. Designed a robust B2B assessment system using Django, PostgreSQL, and AWS Lambda with OWASP-compliant security and data integrity validation. Strengthened system security through automated vulnerability scanning, penetration testing, and threat modeling, reducing security risks by 35%.']},
-  {
-    title: 'Software Engineering Intern',
-    company: 'JunoClinic',
-    duration: 'Jan 2022 – Mar 2022',
-    description: [
-      'Developed a responsive single-page application using JavaScript, HTML, CSS, and REST APIs, reducing customer bounce rate by 15% through optimized asset loading and asynchronous data retrieval. Enhanced backend security in Django by implementing SQL injection prevention, email spoofing mitigation, API encryption, and JWT authentication, significantly strengthening data protection.'
+      'Architected enterprise lakehouse on Microsoft Fabric using medallion architecture, enabling regulated analytics for clinical and research teams.',
+      'Built real-time streaming pipelines using Azure Event Hubs and Databricks Structured Streaming processing 1.5M+ events daily.',
+      'Implemented Delta Lake data quality framework aligned with FDA 21 CFR Part 11, reducing data quality escalations by 60%+.',
+      'Established governance using Unity Catalog and Microsoft Purview for HIPAA-compliant analytics.'
     ]
   },
   {
-    title: 'Software Intern',
-    company: 'Medfin',
-    duration: 'Oct 2020 – Jan 2021',
+    title: 'Senior Data Engineer',
+    company: 'Capital One',
+    duration: 'Feb 2021 – Aug 2024',
     description: [
-      'Constructed and optimized Python-based data analytics scripts with Pandas, NumPy, and Matplotlib, boosting predictive model accuracy by 25% and enabling data-driven decision-making for healthcare operations. Improved digital marketing performance by implementing A/B testing and keyword optimization in Google AdWords and Analytics, resulting in an 18% increase in conversion rates.'
+      'Designed customer analytics platform on Azure Synapse consolidating multiple financial systems into a unified Customer 360.',
+      'Built low-latency streaming pipelines for credit card transactions using Event Hubs and Databricks.',
+      'Implemented CDC and incremental loading pipelines reducing daily processing from hours to minutes.',
+      'Established CI/CD pipelines with Azure DevOps and Terraform.'
+    ]
+  },
+  {
+    title: 'Azure Data Engineer',
+    company: 'Wegmans Food Markets',
+    duration: 'Jun 2019 – Jan 2021',
+    description: [
+      'Migrated on-prem SQL Server warehouse to Azure Data Lake Gen2 using partitioned Parquet.',
+      'Developed Azure Data Factory pipelines for POS ingestion across 100+ stores.',
+      'Built Databricks datasets supporting demand forecasting and supply chain optimization.'
+    ]
+  },
+  {
+    title: 'Data Engineer / ETL Developer',
+    company: 'Infosys Limited',
+    duration: 'Jun 2016 – May 2019',
+    description: [
+      'Built Informatica and PySpark pipelines processing large-scale financial datasets.',
+      'Implemented SCD, CDC, and reconciliation frameworks for banking clients.',
+      'Supported AWS-based big data platforms using Glue, EMR, and Redshift.'
     ]
   }
 ];
 
+/* =======================
+   EDUCATION
+======================= */
 export const education: Education[] = [
   {
-    degree: 'Master of Science in Computer Science',
-    institution: 'Indiana University Bloomington',
-    duration: '2023 – 2025',
-    description: [
-      'Graduate & Professional Student Government Representative for the Computer Science Department.',
-      'Relevant Coursework: Applied Algorithms, Elements of Artificial Intelligence, Systems & Protocol Security and Information Assurance, Advanced Database Concepts, Software Engineering'
-    ]
-  },
-  {
     degree: 'Bachelor of Technology in Computer Science & Engineering',
-    institution: 'MLR Institute of Technology',
-    duration: '2018 – 2022',
-    description: 'Graduated with distinction. Led multiple technical projects and participated in national-level hackathons.'
-  },
-];
-
-// Blogs, Publications, Certifications: unchanged, as requested
-export const publications: Publication[] = [
-  {
-    title: 'Multifactor Authentication Key Management System based Security Model Using Effective Handover Tunnel with IPV6',
-    publisher: 'International Conference on Contemporary Computing and Informatics',
-    date: 'September 2022',
-    url: 'https://ijcnis.org/index.php/ijcnis/article/view/5521'
-  },
-  {
-    title: 'A Review on Application of Deep Learning in Natural Language Processing',
-    publisher: 'Institute of Electrical and Electronics Engineers',
-    date: 'March 2023',
-    url: 'https://ieeexplore.ieee.org/document/10073309'
-  },
-  {
-    title: 'An Analysis of the Supervised Learning Approach for Online Fraud Detection',
-    publisher: 'Computational Intelligence and Machine Learning',
-    date: 'October 2022',
-    url: 'https://www.cimachinelearning.com/analysis-supervised-learning-approach.php'
-  },
-  {
-    title: 'A Scalable Platform to Collect, Store, Visualize and Analyze Big Data in Real- Time',
-    publisher: 'Institute of Electrical and Electronics Engineers',
-    date: 'May 2023',
-    url: 'https://ieeexplore.ieee.org/document/10118183'
-  },
-  {
-    title: 'A Review on Comparative study of 4G, 5G and 6G Networks',
-    publisher: 'Institute of Electrical and Electronics Engineers',
-    date: 'March 2023',
-    url: 'https://ieeexplore.ieee.org/document/10073385'
-  },
-  {
-    title: 'Detecting Covid-19 from Chest X-ray using Transfer Learning',
-    publisher: 'International Journal of Engineering Research & Technology',
-    date: 'August 2022',
-    url: 'https://www.ijert.org/detecting-covid-19-from-chest-x-ray-using-transfer-learning'
+    institution: 'Jawaharlal Nehru Technological University, Hyderabad',
+    duration: '2012 – 2016',
+    description: [
+      'Core foundation in databases, data structures, operating systems, and software engineering.'
+    ]
   }
 ];
 
+/* =======================
+   CERTIFICATIONS
+======================= */
 export const certifications: Certification[] = [
   {
-    name: 'CompTIA Security+ ce Certification',
+    name: 'CompTIA Security+ ce',
     issuer: 'CompTIA',
     date: 'February 2025',
     url: 'https://www.credly.com/badges/c3f63138-9a3e-4f25-b483-5db0453c2d65/public_url'
-  },
-  {
-    name: 'Google IT Support Certificate',
-    issuer: 'Google',
-    date: 'October 2022',
-    url: 'https://www.credly.com/badges/a6ee242b-d3bf-484e-9255-18366b90ccc3/public_url'
   }
 ];
 
+/* =======================
+   PROJECTS (Resume-style)
+======================= */
 export const projects: Project[] = [
   {
-    id: 'project1',
-    title: 'Event Venue Management System',
+    id: 'fabric-lakehouse',
+    title: 'Enterprise Lakehouse Platform (Azure)',
     description:
-      'Built a logistics platform for event coordination, reducing double-bookings and improving booking visibility. Added dual authentication for enhanced security.',
-    image: 'https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg',
-    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/harshadhoma/Event_Venue_Management_System',
-    demo: '',
-  },
-  {
-    id: 'project2',
-    title: 'Database Development from Flat Files',
-    description:
-      "Scraped and structured cybersecurity data into MySQL and Neo4j databases, enabling efficient threat actor analysis and security insights.",
-    image: 'https://www.scnsoft.com/blog-pictures/information-security/7-best-practices-for-database-security.png',
-    tags: ['MySQL', 'Neo4j', 'Python'],
+      'Designed and implemented a production-grade lakehouse using Microsoft Fabric, Databricks, and Delta Lake supporting regulated analytics.',
+    image: 'fabric-lakehouse.png',
+    tags: ['Microsoft Fabric', 'Databricks', 'Delta Lake'],
     github: '',
     demo: '',
   },
   {
-    id: 'project3',
-    title: 'AI-Powered Medical Chatbot',
+    id: 'realtime-streaming',
+    title: 'Real-Time Streaming Analytics',
     description:
-      'Developed an AI medical chatbot using LangChain, AWS, and OpenAI, reducing response time by 30% and automating 90% of user inquiries.',
-    image: 'https://cdn.pixabay.com/photo/2023/03/31/07/26/artificial-intelligence-7889375_1280.jpg',
-    tags: ['Python', 'AWS', 'Streamlit', 'LangChain', 'OpenAI'],
-    github: 'https://github.com/harshadhoma/chatbot',
+      'Built real-time ingestion pipelines using Azure Event Hubs and Databricks Structured Streaming for low-latency analytics.',
+    image: 'streaming.png',
+    tags: ['Event Hubs', 'Databricks', 'Streaming'],
+    github: '',
     demo: '',
-  },
-  {
-    id: 'project4',
-    title: 'Secure Online Banking Application',
-    description:
-      'Built a secure online banking platform with real-time transactions, RBAC, AES encryption, and malware defense, remediating 15+ vulnerabilities.',
-    image: 'https://cdn.pixabay.com/photo/2018/07/15/18/05/bank-3540186_1280.jpg',
-    tags: ['AngularJS', 'Java Spring Boot', 'MySQL'],
-    github: 'https://github.com/harshadhoma/BankApp',
-    demo: '',
-  },
-  {
-    id: 'project5',
-    title: 'Gearbox Failure Prediction in Wind Turbines',
-    description:
-      'Created a machine learning model for wind turbine gearbox failure, achieving up to 95% accuracy using multiple algorithms.',
-    image: 'https://konic-gearbox.com/wp-content/uploads/2023/04/6MW-wind-turbine-gearbox-e1683276920322.jpg',
-    tags: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
-    github: 'https://github.com/harsha/gearbox-failure-prediction',
-    demo: '',
-  },
-  {
-    id: 'project6',
-    title: 'Monroe County Fairgrounds Website Redesign',
-    description:
-      'Redesigned the Monroe County Fairgrounds website with Figma wireframes and React.js frontend. See the live site below.',
-    image: 'monroe-redesign.png',
-    tags: ['React.js', 'Figma'],
-    github: 'https://github.com/harsha/monroe-fairgrounds-redesign',
-    demo: 'https://monroe-redesign.vercel.app/',
-  },
+  }
 ];
 
-
+/* =======================
+   BLOGS
+======================= */
 export const blogs: BlogPost[] = [
   {
-    id: 'blog1',
-    title: 'Mastering React Hooks',
-    excerpt: 'A comprehensive guide to using React Hooks effectively in your applications.',
-    date: 'March 15, 2023',
-    image: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    url: 'https://blog.com/mastering-react-hooks',
-  },
-  {
-    id: 'blog2',
-    title: 'Building Scalable APIs with NestJS',
-    excerpt: 'Learn how to create robust and scalable backend APIs using NestJS framework.',
-    date: 'January 22, 2023',
-    image: 'https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    url: 'https://blog.com/scalable-apis-nestjs',
-  },
-  {
-    id: 'blog3',
-    title: 'Optimizing Frontend Performance',
-    excerpt: 'Tips and techniques to improve your web application\'s performance and user experience.',
-    date: 'December 10, 2022',
-    image: 'https://images.pexels.com/photos/5926393/pexels-photo-5926393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    url: 'https://blog.com/frontend-performance',
-  },
+    id: 'topics-unfolded',
+    title: 'Topics Unfolded',
+    excerpt: 'Personal blog covering technology, data engineering, and real-world system design.',
+    date: 'Ongoing',
+    image: '',
+    url: 'https://topicsunfolded.blog/'
+  }
 ];
 
+/* =======================
+   CONTACT
+======================= */
 export const contact: Contact = {
-  email: 'dhreddy2001@gmail.com',
-  phone: '+1 (930) 333-4035',
-  location: 'Bloomington, IN, USA',
+  email: 'dhreddy07@gmail.com',
+  phone: '+1 256-333-2303',
+  location: 'Charlotte, North Carolina, USA',
 };
 
-export const codeSnippet = `const developer = {
-  name: 'Harshavardhan Reddy Dhoma',
-  skills: [
-    'Python', 'Java', 'AWS', 'Docker', 'LangChain', 'SQL', 'React', 'Flask'
-  ],
-  hardworker: true,
-  quickLearner: true,
-  problemSolver: true,
-  hireable: function() {
-    return (
-      this.hardworker &&
-      this.problemSolver &&
-      this.skills.length >= 5
-    );
-  }
+/* =======================
+   HERO CODE SNIPPET
+======================= */
+export const codeSnippet = `const dataEngineer = {
+  name: 'Harsha Reddy',
+  role: 'Senior Azure Data Engineer',
+  experience: '9+ years',
+  stack: ['Azure Databricks', 'Microsoft Fabric', 'Synapse'],
+  focus: ['Streaming', 'Lakehouse', 'Governance', 'Data Quality'],
+  hireable: () => true
 };`;
