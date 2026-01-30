@@ -28,7 +28,7 @@ export const navLinks: NavLink[] = [
 export const socialLinks: SocialLink[] = [
   { id: 'linkedin', icon: 'Linkedin', url: 'https://www.linkedin.com/in/reddyharsha07/' },
   { id: 'mail', icon: 'Mail', url: 'mailto:dhreddy07@gmail.com' },
-  { id: 'blog', icon: 'Link', url: 'https://topicsunfolded.blog/' }
+  // { id: 'blog', icon: 'Link', url: 'https://topicsunfolded.blog/' }
 ];
 
 /* =======================
@@ -192,9 +192,9 @@ export const blogs: BlogPost[] = [
     id: 'topics-unfolded',
     title: 'Topics Unfolded',
     excerpt: 'Personal blog covering technology, data engineering, and real-world system design.',
-    date: 'Ongoing',
+    date: 'Present',
     image: '',
-    url: 'https://topicsunfolded.blog/'
+    url: 'http://topicsunfolded.blog/'
   }
 ];
 

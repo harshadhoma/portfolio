@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Facebook, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Facebook, Mail, Twitter, Link as LinkIcon } from 'lucide-react';
 import { socialLinks } from '../data';
 
 const iconComponents: Record<string, React.ReactNode> = {
@@ -8,6 +8,7 @@ const iconComponents: Record<string, React.ReactNode> = {
   Facebook: <Facebook size={20} />,
   Mail: <Mail size={20} />,
   Twitter: <Twitter size={20} />,
+  Link: <LinkIcon size={20} />,
 };
 
 const SocialIcons: React.FC = () => {
@@ -22,7 +23,7 @@ const SocialIcons: React.FC = () => {
           className="social-icon"
           aria-label={social.id}
         >
-          {iconComponents[social.icon]}
+          {iconComponents[social.icon] ?? <Mail size={20} />}
         </a>
       ))}
     </>

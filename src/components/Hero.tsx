@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
               I&apos;m <span className="text-secondary">Harsha Reddy</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-black-700 dark:text-black-300 mb-8 max-w-xl">
+            <p className="text-base md:text-lg leading-relaxed text-black-700 dark:text-black-300 mb-8 max-w-xl">
               Senior Azure Data Engineer with <b>9+ years</b> of experience building enterprise data platforms across{' '}
               <b>pharma</b>, <b>financial services</b>, and <b>retail</b>. Specialized in{' '}
               <b>Microsoft Fabric</b>, <b>Azure Databricks</b>, and <b>Synapse Analytics</b>—delivering{' '}
@@ -81,23 +81,21 @@ const Hero: React.FC = () => {
 {`const dataEngineer = {
   name: 'Harsha Reddy',
   role: 'Senior Azure Data Engineer',
-  coreStack: [
-    'Microsoft Fabric', 'OneLake', 'Azure Databricks', 'Synapse Analytics'
-  ],
-  specialties: [
+  stack: ['Microsoft Fabric', 'Azure Databricks', 'Synapse Analytics'],
+  expertise: [
     'Delta Lake (Medallion Architecture)',
-    'Event Hubs + Structured Streaming',
-    'Data Quality (Great Expectations + PySpark)',
-    'Governance (Purview, RBAC, Masking)',
-    'CI/CD + IaC (Azure DevOps, Terraform)'
+    'Real-time Streaming (Event Hubs + Structured Streaming)',
+    'Data Quality (Great Expectations, PySpark)',
+    'CI/CD & IaC (Azure DevOps, Terraform)'
   ],
   impact: {
-    clinicalData: '450TB+ lakehouse platform',
-    latency: 'minutes-level dashboards with optimized warehouse patterns',
-    streaming: 'sub-second to near-real-time pipelines for customer & patient insights'
+    scale: '450TB+ enterprise lakehouse',
+    performance: 'dashboards reduced from hours to minutes',
+    streaming: 'low-latency pipelines for clinical & financial data'
   },
-  hireable: () => true
-};`}
+  hireable: true
+};
+`}
                   </code>
                 </pre>
               </div>

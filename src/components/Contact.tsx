@@ -79,9 +79,9 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Optional: Social icons under contact details */}
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <SocialIcons />
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
             <div className="bg-background p-8 rounded-lg shadow w-full">
               <h3 className="text-xl font-semibold mb-4 text-dark">How I Can Help</h3>
               <ul className="list-disc list-inside text-text space-y-2">
-                <li>Microsoft Fabric / OneLake lakehouse design (Bronze → Silver → Gold)</li>
+                <li>OneLake lakehouse design (Bronze → Silver → Gold)</li>
                 <li>Azure Databricks ETL + performance tuning (Delta Lake, partitioning, optimization)</li>
                 <li>Real-time streaming pipelines (Event Hubs + Structured Streaming)</li>
                 <li>Synapse optimization (distribution, columnstore, partition elimination)</li>

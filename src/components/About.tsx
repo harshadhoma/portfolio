@@ -50,7 +50,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               <div>
                 <p className="font-semibold text-dark">Location:</p>
-                <p className="text-text">Indianapolis, IN, USA</p>
+                <p className="text-text">Charlotte, North Carolina, USA</p>
               </div>
 
               <div>
