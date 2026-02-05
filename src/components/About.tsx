@@ -27,30 +27,30 @@ const About: React.FC = () => {
               Hi, I&apos;m <span className="text-primary">Harsha Reddy</span>
             </h3>
 
-            <p className="text-text mb-4">
-              I’m a <b>Senior Azure Data Engineer</b> with <b>9+ years</b> of experience designing and delivering
+            <p className="text-text text-justify mb-4">
+              I’m a <b>Senior Data Engineer</b> with <b>9+ years</b> of experience designing and delivering
               enterprise-scale data platforms across <b>pharmaceutical</b>, <b>financial services</b>, and <b>retail</b>.
-              My core stack includes <b>Microsoft Fabric</b>, <b>Azure Databricks</b>, and <b>Azure Synapse Analytics</b>,
-              building lakehouse architectures that turn messy source data into trusted, analytics-ready datasets.
+              I specialize in building modern <b>lakehouse and data platform architectures</b> that transform raw,
+              fragmented source data into trusted, analytics-ready datasets.
             </p>
 
-            <p className="text-text mb-4">
-              Recently, I’ve been building <b>Fabric/OneLake medallion architectures</b>, <b>real-time streaming pipelines</b>{' '}
-              with <b>Azure Event Hubs + Databricks Structured Streaming</b>, and <b>Delta Lake</b> pipelines with automated
-              data quality checks (Great Expectations + custom PySpark). I focus on performance tuning (partitioning,
-              distribution, indexing), strong governance (RBAC, masking, lineage), and CI/CD + IaC (Azure DevOps, Terraform)
-              so data products are reliable in production.
+            <p className="text-text text-justify mb-4">
+              My recent work focuses on <b>cloud-native data platforms</b>, <b>real-time streaming pipelines</b>, and
+              <b> large-scale batch processing</b> using distributed compute engines and open data formats.
+              I design end-to-end pipelines with strong emphasis on <b>data quality</b>,
+              <b> performance optimization</b>, and <b>production reliability</b>.
             </p>
 
-            <p className="text-text mb-4">
-              I enjoy solving “hard mode” problems—high-volume streaming, compliance-heavy datasets, and pipelines that must
-              be fast, auditable, and cost-efficient. My goal is simple: ship data platforms that teams actually trust and use.
+            <p className="text-text text-justify mb-4">
+              I build systems with <b>governance and security baked in</b>—role-based access, data masking, lineage,
+              auditability, and <b>CI/CD with Infrastructure as Code</b> so platforms are scalable,
+              repeatable, and easy to operate across environments.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               <div>
                 <p className="font-semibold text-dark">Location:</p>
-                <p className="text-text">Charlotte, North Carolina, USA</p>
+                <p className="text-text">USA</p>
               </div>
 
               <div>
@@ -80,11 +80,9 @@ const About: React.FC = () => {
             <div className="bg-background p-8 rounded-lg shadow w-full">
               <h3 className="text-xl font-semibold mb-4 text-dark">What Drives Me</h3>
               <ul className="list-disc list-inside text-text space-y-2">
-                <li>Building trusted lakehouse platforms on Microsoft Fabric, Databricks, and Synapse</li>
-                <li>Real-time streaming pipelines (Event Hubs + Structured Streaming) with low-latency insights</li>
-                <li>Data quality & reliability: automated validation, observability, and SLAs</li>
-                <li>Governance & security: RBAC, masking, lineage, and compliance-first engineering</li>
-                <li>Engineering excellence: Terraform IaC + Azure DevOps CI/CD for repeatable deployments</li>
+                <li>Designing scalable lakehouse and analytics platforms using open architectures</li>
+                <li>Building real-time and batch data pipelines for high-volume workloads</li>
+                <li>Engineering excellence through CI/CD, observability, and Infrastructure as Code</li>
               </ul>
             </div>
           </motion.div>

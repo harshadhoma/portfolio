@@ -91,7 +91,7 @@ export const experiences: Experience[] = [
   {
     title: 'Senior Data Platform Engineer',
     company: 'Eli Lilly and Company',
-    duration: 'Sep 2024 – Present',
+    duration: 'Feb 2024 – Present',
     description: [
       'Architected enterprise lakehouse on Microsoft Fabric using medallion architecture, enabling regulated analytics for clinical and research teams.',
       'Built real-time streaming pipelines using Azure Event Hubs and Databricks Structured Streaming processing 1.5M+ events daily.',
@@ -102,7 +102,7 @@ export const experiences: Experience[] = [
   {
     title: 'Senior Data Engineer',
     company: 'Capital One',
-    duration: 'Feb 2021 – Aug 2024',
+    duration: 'Apr 2022 – Jan 2024',
     description: [
       'Designed customer analytics platform on Azure Synapse consolidating multiple financial systems into a unified Customer 360.',
       'Built low-latency streaming pipelines for credit card transactions using Event Hubs and Databricks.',
@@ -113,7 +113,7 @@ export const experiences: Experience[] = [
   {
     title: 'Azure Data Engineer',
     company: 'Wegmans Food Markets',
-    duration: 'Jun 2019 – Jan 2021',
+    duration: 'Jul 2019 – Mar 2022',
     description: [
       'Migrated on-prem SQL Server warehouse to Azure Data Lake Gen2 using partitioned Parquet.',
       'Developed Azure Data Factory pipelines for POS ingestion across 100+ stores.',
@@ -121,30 +121,39 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    title: 'Data Engineer / ETL Developer',
+    title: 'ETL Developer',
     company: 'Infosys Limited',
-    duration: 'Jun 2016 – May 2019',
+    duration: 'Jan 2017 – Jul 2019',
     description: [
-      'Built Informatica and PySpark pipelines processing large-scale financial datasets.',
-      'Implemented SCD, CDC, and reconciliation frameworks for banking clients.',
-      'Supported AWS-based big data platforms using Glue, EMR, and Redshift.'
+      'Built Informatica PowerCenter workflows and SQL pipelines processing large-scale banking datasets.',
+      'Implemented SCD Type 1/2, CDC, and reconciliation frameworks for financial clients.',
+      'Supported AWS-based data platforms using S3, Glue, EMR, and Redshift.'
     ]
   }
 ];
 
 /* =======================
-   EDUCATION
+   EDUCATION (Resume ONLY)
 ======================= */
 export const education: Education[] = [
   {
+    degree: 'Master of Science in Computer Science',
+    institution: 'Indiana University Bloomington',
+    duration: 'Aug 2015 – Dec 2016',
+    description: [
+      'Advanced coursework in distributed systems, databases, and software engineering.'
+    ]
+  },
+  {
     degree: 'Bachelor of Technology in Computer Science & Engineering',
     institution: 'Jawaharlal Nehru Technological University, Hyderabad',
-    duration: '2012 – 2016',
+    duration: 'Aug 2010 – May 2014',
     description: [
-      'Core foundation in databases, data structures, operating systems, and software engineering.'
+      'Strong foundation in data structures, databases, operating systems, and software engineering.'
     ]
   }
 ];
+
 
 /* =======================
    CERTIFICATIONS
@@ -204,7 +213,7 @@ export const blogs: BlogPost[] = [
 export const contact: Contact = {
   email: 'dhreddy07@gmail.com',
   phone: '+1 256-333-2303',
-  location: 'Charlotte, North Carolina, USA',
+  location: 'USA',
 };
 
 /* =======================

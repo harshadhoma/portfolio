@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1M--V61Eclq_5ildWHjWCaeR9Jvy1ybL3/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1M--V61Eclq_5ildWHjWCaeR9Jvy1ybL3/view?usp=sharing"
                 className="bg-white border-2 border-primary text-primary px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300 inline-flex items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
