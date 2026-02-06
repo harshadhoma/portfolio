@@ -163,7 +163,7 @@ export const certifications: Certification[] = [
     name: 'CompTIA Security+ ce',
     issuer: 'CompTIA',
     date: 'February 2025',
-    url: 'https://www.credly.com/badges/c3f63138-9a3e-4f25-b483-5db0453c2d65/public_url'
+    // url: 'https://www.credly.com/badges/c3f63138-9a3e-4f25-b483-5db0453c2d65/public_url'
   }
 ];
 
