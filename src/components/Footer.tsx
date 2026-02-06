@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-primary">
-              Harshavardhan Reddy Dhoma
+              Harsha Reddy
             </h3>
             <p className="text-sm text-black-400">
               Senior Data Engineer
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom row */}
         <div className="mt-4 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} Harshavardhan Reddy. All rights reserved.
+          © {new Date().getFullYear()} Harsha Reddy. All rights reserved.
         </div>
       </div>
 
